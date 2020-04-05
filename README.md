@@ -23,4 +23,5 @@ The main function
 
 [success,maxReal,improve,Vps1] = TX_opt(ps,Vps0,dispratio,load_level)
 
-accept 
+The function takes the transmission system data structure (ps), initial power flow solution (Vps0), percentage of controllable load (dispratio), and load level (load_level). 
+
