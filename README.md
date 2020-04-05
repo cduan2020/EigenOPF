@@ -11,3 +11,8 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
 The full text of the GNU General Public License can be found in the file “license.txt".
+
+
+# System requirement
+Matpower 5.1 https://matpower.org/download/
+IPOPT Solver or Knitro Solver
