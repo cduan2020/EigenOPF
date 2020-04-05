@@ -21,4 +21,6 @@ IPOPT Solver or Knitro Solver, a free version of IPOPT can be found in https://w
 # Usage
 The main function 
 
-OptimizeRatio(ps,Vps0,dispratio,load_level)
+[success,maxReal,improve,Vps1] = TX_opt(ps,Vps0,dispratio,load_level)
+
+accept 
