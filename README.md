@@ -17,3 +17,8 @@ The full text of the GNU General Public License can be found in the file “lice
 Matpower 5.1 https://matpower.org/download/
 
 IPOPT Solver or Knitro Solver, a free version of IPOPT can be found in https://www.inverseproblem.co.nz/OPTI/index.php/DL/DownloadOPTI
+
+# Usage
+The main function 
+
+OptimizeRatio(ps,Vps0,dispratio,load_level)
