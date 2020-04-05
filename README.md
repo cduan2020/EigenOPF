@@ -1,5 +1,6 @@
 # EigenOPF
 Copyright (C) 2020 Chao Duan
+
 Generation and Demand Co-optimization for Small-signal Stability Enhancement
 
 
