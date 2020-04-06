@@ -8,6 +8,7 @@ system='test_system_10gen';
 % system='test_system_50gen';
 
 % specify the number of load controllability levels
+% dispratio: relative increase or decrease allowed for each controllable load
 N=11;
 maxReal=zeros(1,N+1);
 improve=zeros(1,N+1);
@@ -25,7 +26,6 @@ ps = load_system_ps(system,loadmode);
 ps = mpc2ps(ps);
 ps.bus(ps.bus(:,8) > ps.bus(:,12),12) = 1.2;
 ps.bus(ps.bus(:,8) < ps.bus(:,13),13) = 0.8;
-% ps.branch(:,6:8)=inf;
 ps.gen = ps.gen(:,1:21);
 ps.bus(:,3:4)=ps.bus(:,3:4)*loadability;
 ps.gen(:,2)=ps.gen(:,2)*loadability;
@@ -58,7 +58,7 @@ dispratio=0.0;
 load_level=1;
 maxReal(1,1)=max(real(lambda(abs(lambda)>10^-6 & imag(lambda)>0.01))./(abs(imag(lambda(abs(lambda)>10^-6 & imag(lambda)>0.01)))));
 Vps1{1,1}=Vps0;
-for i=1:11
+for i=1:N
     i
     [Vps1{1,i+1},success,maxReal(1,i+1),improve(1,i+1),best_id(1,i+1)]=OptimizeRatio(ps,Vps0,0.01*(i-1),load_level);
     Vps0 = Vps1{1,i+1};
