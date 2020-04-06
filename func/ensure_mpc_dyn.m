@@ -1,4 +1,6 @@
 function mpc = ensure_mpc_dyn( mpc )
+% originally from Ferenc Molnar
+
 %ensure_mpc_dyn Ensures that mpc has proper gen_dyn data. 
 
 % Number of generators:
