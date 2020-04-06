@@ -94,15 +94,6 @@ c_11_v = -veig(Index5_L)'*ReEpdv(Kg(Xqp),V,xy2dq,expdlt_v,ueig(Index1_R));
 c_31_a = -veig(Index7_L)'*ImEpda(Kg(Xdp),V,xy2dq,expdlt_a,ueig(Index1_R));
 c_31_v = -veig(Index7_L)'*ImEpdv(Kg(Xdp),V,xy2dq,expdlt_v,ueig(Index1_R)); 
 
-% c_13_a= veig(Index5_L)'*sparsediag(ueig(Index3_R).*(-sindelta))*expdlt_a;
-% c_13_v= veig(Index5_L)'*sparsediag(ueig(Index3_R).*(-sindelta))*expdlt_v;
-% c_14_a= veig(Index5_L)'*sparsediag(ueig(Index4_R).*(cosdelta))*expdlt_a;
-% c_14_v= veig(Index5_L)'*sparsediag(ueig(Index4_R).*(cosdelta))*expdlt_v;
-
-% c_33_a= veig(Index7_L)'*sparsediag(ueig(Index3_R).*(cosdelta))*expdlt_a;
-% c_33_v= veig(Index7_L)'*sparsediag(ueig(Index3_R).*(cosdelta))*expdlt_v;
-% c_34_a= veig(Index7_L)'*sparsediag(ueig(Index4_R).*(sindelta))*expdlt_a;
-% c_34_v= veig(Index7_L)'*sparsediag(ueig(Index4_R).*(sindelta))*expdlt_v;
 
 
 lam=ueig(Index5_R);
