@@ -38,17 +38,7 @@ mpc = ensure_mpc_dyn(mpc);
 
 %% convert to internal indexing
 mpc = ext2int(mpc);
-% mpc = e2i_field(mpc, 'gen_dyn', 'gen');
-% mpc = e2i_field(mpc, 'bus_dyn', 'bus');
-% 
-% if isfield(mpc, 'busExtra')
-%     mpc = e2i_field(mpc, {'busExtra', 'Latitude'}, 'bus');
-%     mpc = e2i_field(mpc, {'busExtra', 'Longitude'}, 'bus');
-% end
-% 
-% if (nargin > 1)
-%     busdata = e2i_data(mpc, busdata, 'bus');
-% end
+
 
 %% remove offline generators
 on = mpc.gen(:,8) == 1;
@@ -63,7 +53,7 @@ ps.gen_dyn(:,1:4)=ps.gen_dyn(:,1:4)*mpc.baseMVA./ps.gen_dyn(:,11);
 ps.gen_dyn(:,5)=ps.gen_dyn(:,5).*ps.gen_dyn(:,11)/mpc.baseMVA;
 ps.gen_dyn(:,6)=ps.gen_dyn(:,6).*ps.gen_dyn(:,11)/mpc.baseMVA;
 
-%ps.bus_dyn = mpc.bus_dyn;
+
 
 %% merge multiple generators on the same bus
 genbus = unique(ps.gen(:,1));
@@ -124,11 +114,7 @@ if isfield(mpc, 'busExtra')
     end
 end
 
-% final check: ps powerflow must work too
-% [~,success] = runpf_ps(ps);
-% if ~success
-%     error('Powerflow failed on final network\n');
-% end
+
 
 ps.version='2';
 ps.branch=mpc.branch;
