@@ -1,6 +1,6 @@
 function mpc=ps2mpc(ps)
 
-% Originnal created by Ferenc Molnar.
+% Originally created by Ferenc Molnar.
 
 % mpc = 
 % 
