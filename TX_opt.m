@@ -109,7 +109,7 @@ function [success,maxReal,improve,V0] = TX_opt(ps,V0,dispratio,tbd0,load_level)
       mpopt.ipopt.opts.max_resto_iter = 10;
       mpopt.ipopt.opt = 0;
       
-      % Uncomment the corresponding line according to the avilable solver
+      % Uncomment one of these lines according to the solver available
   %     [results, success, raw] = ktropf_solver_eigen(om_new, mpopt, V0);
       [results, success, raw] = ipoptopf_solver_eigen(om_new, mpopt, V0);
 
