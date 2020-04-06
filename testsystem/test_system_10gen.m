@@ -95,7 +95,8 @@ function mpc = test_system_10gen
 % Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
 % USA.
 
-%   Last modified by Takashi Nishikawa on 1/22/2015
+% Dynamic Data Source: Canizares, C., et al. "Benchmark systems for small signal stability analysis and control." 
+% http://resourcecenter. ieee-pes. org/pes/product/technical-reports/PESTR18 PES-TR (2015).
 
 %% dynamic data added by T. Nishikawa on 8/1/2014
 mpc.ref_freq = 60;
