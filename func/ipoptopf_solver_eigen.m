@@ -155,24 +155,7 @@ options.auxdata = struct( ...
     'Js',       Js, ...
     'Hs',       Hs    );
 
-% %% check Jacobian and Hessian structure
-% xr                  = rand(size(x0));
-% lambda              = rand(2*nb+2*nl2, 1);
-% options.auxdata.Js  = jacobian(xr, options.auxdata);
-% options.auxdata.Hs  = tril(hessian(xr, 1, lambda, options.auxdata));
-% Js1 = options.auxdata.Js;
-% options.auxdata.Js = Js;
-% Hs1 = options.auxdata.Hs;
-% [i1, j1, s] = find(Js);
-% [i2, j2, s] = find(Js1);
-% if length(i1) ~= length(i2) || norm(i1-i2) ~= 0 || norm(j1-j2) ~= 0
-%     error('something''s wrong with the Jacobian structure');
-% end
-% [i1, j1, s] = find(Hs);
-% [i2, j2, s] = find(Hs1);
-% if length(i1) ~= length(i2) || norm(i1-i2) ~= 0 || norm(j1-j2) ~= 0
-%     error('something''s wrong with the Hessian structure');
-% end
+
 
 %% define variable and constraint bounds
 options.lb = xmin;
@@ -317,8 +300,4 @@ lam.eqnonlin   = lambda(1:d.neqnln);
 lam.ineqnonlin = lambda(d.neqnln+(1:d.niqnln));
 H = tril(opf_hessfcn(x, lam, sigma, d.om, d.Ybus, d.Yf, d.Yt, d.mpopt, d.il));
 
-% function Js = jacobianstructure(d)
-% Js = d.Js;
-% 
-% function Hs = hessianstructure(d)
-% Hs = d.Hs;
+
