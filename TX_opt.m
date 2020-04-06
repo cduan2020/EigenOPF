@@ -6,7 +6,7 @@ function [success,maxReal,improve,V0] = TX_opt(ps,V0,dispratio,tbd0,load_level)
 % dispratio: relative increase or decrease allowed for each controllable load
 %            (the limits for generators are as specified in the data structure ps)
 % tbd0: the initial step size in the SNLP optimization algorithm
-% load_level: load factor
+% load_level: the factor by which all loads are scaled before optimization
 % success: indicator for the success of solving the problem
 % maxReal: values of the damping ratio obtained during optimization
 % improve: percentage improvement of the damping ratio
