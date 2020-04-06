@@ -1,6 +1,6 @@
 function mpc = load_system_ps( casename, convert )
 
-% Originnal created by Ferenc Molnar.
+% Originnally created by Ferenc Molnar.
 
 %load_system Loads the specified powergrid sample by case name and
 %conversion
