@@ -32,7 +32,7 @@ function mpc = test_system_50gen
 % Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
 % USA.
 
-%   Last modified by Takashi Nishikawa on 1/22/2015
+% Modified by Takashi Nishikawa on 1/22/2015
 
 mpc = loadcase('dd50cdf.m');
 mpc.ref_freq = 60;
