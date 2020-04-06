@@ -1,4 +1,6 @@
 function [results, success, raw] = ipoptopf_solver_eigen(om, mpopt, V0)
+% Origninally from Matpower 5.1, modified by Chao Duan 4/6/2020
+
 %IPOPTOPF_SOLVER  Solves AC optimal power flow using MIPS.
 %
 %   [RESULTS, SUCCESS, RAW] = IPOPTOPF_SOLVER(OM, MPOPT)
