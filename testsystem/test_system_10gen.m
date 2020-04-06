@@ -247,12 +247,3 @@ mpc.gencost = [
 ];
 
 
-%% change condition
-
-mpc.bus(:,3)=mpc.bus(:,3)*1;
-mpc.bus(:,4)=mpc.bus(:,4)*1;
-
-mpc.gen(:,2)= mpc.gen(:,2)*1;
-mpc.gen(:,3)= mpc.gen(:,3)*1;
-
-mpc.branch(:,4)=mpc.branch(:,4)*1.0;
