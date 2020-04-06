@@ -1,5 +1,6 @@
 clear;clc;
 
+% choose the test system
 system='test_system_10gen';
 % system='test_system_16gen';
 % system='test_system_50gen';
@@ -10,10 +11,12 @@ improve=zeros(1,N+1);
 best_id=zeros(1,N+1);
 Vps1=cell(3,N+1);
 
+% specify the load level
 loadability = 1;
 
 
 %=========================================================
+% initialize the power flow solution
 loadmode=0;
 ps = load_system_ps(system,loadmode);
 ps = mpc2ps(ps);
@@ -27,7 +30,7 @@ ps.gen(:,2)=ps.gen(:,2)*loadability;
 Vps0=results.bus(:,8).*exp(1j*results.bus(:,9)/180*pi);
 %=========================================================
 
-
+% Calculate the initial linearized system and damping ratio
 [Asys0, Bsys0, Csys0, Dsys0]=DAEsys(ps,Vps0);
 Afull=Asys0-Bsys0*(Dsys0\Csys0);
 [Ueig0,D,Veig0] = eig(full(Afull));
