@@ -13,6 +13,9 @@ The full text of the GNU General Public License can be found in the file “LICE
 
 
 # Dependencies
+
+MATLAB 2017b or later.
+
 Matpower 5.1 https://matpower.org/download/
 
 IPOPT Solver or Knitro Solver, a free version of IPOPT can be found in https://www.inverseproblem.co.nz/OPTI/index.php/DL/DownloadOPTI
