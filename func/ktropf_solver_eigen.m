@@ -1,4 +1,6 @@
 function [results, success, raw] = ktropf_solver_eigen(om, mpopt, V0)
+% Origninally from Matpower 5.1, modified by Chao Duan 4/6/2020
+
 %KTROPF_SOLVER  Solves AC optimal power flow using KNITRO.
 %
 %   [RESULTS, SUCCESS, RAW] = KTROPF_SOLVER(OM, MPOPT)
