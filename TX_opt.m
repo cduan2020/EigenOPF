@@ -1,6 +1,7 @@
 function [success,maxReal,improve,V0] = TX_opt(ps,V0,dispratio,tbd0,load_level)
 
 % Optimize the system damping ratio by adjusting generation and demand.
+%
 % ps: the data structure specifying the power system
 % V0: the initial and optimized power flow solution
 % dispratio: relative increase or decrease allowed for each controllable load
