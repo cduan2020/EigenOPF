@@ -1,15 +1,16 @@
 function [Vps1,success,maxReal,improve,best_id]=OptimizeRatio(ps,Vps0,dispratio,load_level)
 
 % Optimize the system damping ratio by adjusting generation and demand.
-% It calls the subroutine TX_opt with differnt initial stepsizes and choose the best solution
+% It calls the subroutine TX_opt with differnt initial step sizes and choose the best solution.
+%
 % ps: the power system data structure
 % Vps0: the initial power flow solution
-% disparatio: ratio of controllable load
+% disparatio: the ratio of controllable load
 % load_level: load factor
 % Vps1: the optimized power flow solution
 % success: indicator of the success of solving the problem
 % maxReal: the damping ratios
-% best_id: the id of the best initial stepsizes
+% best_id: the ID of the best initial step sizes
 
 num_job=12;
 success_vec=cell(num_job,1);
