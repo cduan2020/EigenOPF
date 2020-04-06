@@ -4,6 +4,8 @@ function mpc = dd50cdf
 %  This data was converted from IEEE Common Data Format
 %  (dd50cdf.txt) on 02-Aug-2014 by cdf2matp, rev. 2327
 %  See end of file for warnings generated during conversion.
+%  The file dd50cdf.txt was originally downloaded from UWEE Test Case Archive 
+%  at https://labs.ece.uw.edu/pstca/dyn50/pg_tcadd50.htm
 %
 % 01/02/90 IEEE WORKING GROUP    100.0 1990 S 50-GEN  CASE
 
