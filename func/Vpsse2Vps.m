@@ -35,12 +35,3 @@ end
 
 end
 
-%% tests
-% V0=ps.bus(:,8).*exp(1j*ps.bus(:,9)/180*pi);
-% nb_psse=39;
-% nb_mpc=40;
-% nb_ps=40;
-% Vpsse=V0(1:nb_psse);
-% Vps=Vpsse2Vps(Vpsse, ps, nb_mpc, nb_ps);
-% abs(Vps)
-
