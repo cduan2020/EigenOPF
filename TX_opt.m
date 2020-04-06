@@ -16,7 +16,6 @@ function [success,maxReal,improve,V0] = TX_opt(ps,V0,dispratio,tbd0,load_level)
   %==================== Set the controllable load ==========================
   disploc=find(ps.bus(:,2)==1 & ps.bus(:,3)>0);   % locations of controllable load
   nd=length(disploc);     % number of controllable load
-  %dispratio=0.5*ones(nd,1);   % percentage of controllable load
   %=========================================================================
 
   maxReal=[];
