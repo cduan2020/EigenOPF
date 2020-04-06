@@ -7,8 +7,8 @@ system='test_system_10gen';
 % system='test_system_16gen';
 % system='test_system_50gen';
 
-% specify the number of load controllability levels
-% dispratio: relative increase or decrease allowed for each controllable load
+% specify the number of different load controllability levels to be used
+% (load controllability = relative increase or decrease allowed for each controllable load)
 N=11;
 maxReal=zeros(1,N+1);
 improve=zeros(1,N+1);
@@ -53,7 +53,7 @@ ylim([-25 25]);
 xlabel 'Real part'
 ylabel 'Imaginary part'
 
-% gradually increase the ratio of controllable load and obtain optimized power flow solution
+% gradually increase the load controllability and obtain optimized power flow solution
 dispratio=0.0;
 load_level=1;
 maxReal(1,1)=max(real(lambda(abs(lambda)>10^-6 & imag(lambda)>0.01))./(abs(imag(lambda(abs(lambda)>10^-6 & imag(lambda)>0.01)))));
