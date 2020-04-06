@@ -1,4 +1,6 @@
 function mpc1 = load2control(mpc0, fname, idx, voll, ratio, load_level)
+% Origninally from Matpower 5.1, modified by Chao Duan 4/6/2020
+
 %LOAD2DISP Converts fixed loads to dispatchable.
 %   MPC = LOAD2DISP(MPC0);
 %   MPC = LOAD2DISP(MPC0, FNAME);
