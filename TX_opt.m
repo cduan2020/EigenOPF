@@ -1,10 +1,11 @@
 function [success,maxReal,improve,V0] = TX_opt(ps,V0,dispratio,tbd0,load_level)
 
 % Optimize the system damping ratio by adjusting generation and demand.
-% ps: the power system data structure
+% ps: the data structure specifying the power system
 % V0: the initial and optimized power flow solution
-% disparatio: ratio of controllable load
-% tbd0: the initial step size of the SNLP optimization algorithm
+% dispratio: relative increase or decrease allowed for each controllable load
+%            (the limits for generators are as specified in the data structure ps)
+% tbd0: the initial step size in the SNLP optimization algorithm
 % load_level: load factor
 % success: indicator for the success of solving the problem
 % maxReal: values of the damping ratio obtained during optimization
