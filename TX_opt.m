@@ -155,18 +155,6 @@ function [success,maxReal,improve,V0] = TX_opt(ps,V0,dispratio,tbd0,load_level)
           lambda=lambda1;
           lamIndex=lamIndex1;
       else
-% Uncomment to use the gradient strengthening techniques      
-%           Mset.num=Mset.num+1;
-%           Mset.x=[Mset.x results.x(1:2*nb)];
-%           Mset.abassia=[Mset.abassia abassia];
-%           ueig=[Ueig1(:,maxInx);-(Dsys1)\(Csys1*Ueig1(:,maxInx))];
-%           veig=[Veig1(:,maxInx);-(Dsys1')\(Bsys1'*Veig1(:,maxInx))];
-%           [dsys_da, dsys_dv]=SysGradient(ps,V1,ueig,veig);
-%           Mset.daba_da=[Mset.daba_da ; real(dsys_da)];
-%           Mset.daba_dv=[Mset.daba_dv ; real(dsys_dv)];
-% 
-%           [t, dxnorm, Mset]=BackLineSearchMset(ps,V0,V1,fobj,tol,Mset);
-%           tbd=t*dxnorm;
           tbd=tbd/2;
           if tbd<tol
               break;
