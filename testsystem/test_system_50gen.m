@@ -44,6 +44,7 @@ if any(mpc.gen(:,1) ~= data(:,1))
 end
 
 % Due to the lack of detailed data, the following typical parameters for PSSs and excitors are chosen.
+% Modified by Chao Duan 4/6/2020
 Ka=200*ones(50,1);
 Tr=0.0001*ones(50,1);
 Ta=0.01*ones(50,1);
