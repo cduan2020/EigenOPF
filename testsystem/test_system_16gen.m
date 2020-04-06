@@ -1,32 +1,7 @@
 function mpc = test_system_16gen
-%TEST_SYSTEM_3GEN   3-generator test system.
-%   mpc = TEST_SYSTEM_3GEN generates struct mpc containing the power flow
-%   data for a 9-bus, 3-generator system. This is the 9-bus system in
-%   Example 2.6 of Ref. [1]. Adapted from case9.m, which is distributed
-%   with the MATPOWER package, by adding dynamic parameters.
-%
-%   Reference: [1] P.M. Anderson and A.A. Fouad, Power system control and
-%   stability (IEEE Press, 2nd edition, 2003).
 
-%
-% Copyright (C) 2015  Takashi Nishikawa
-% 
-% This program is free software; you can redistribute it and/or modify
-% it under the terms of the GNU General Public License as published by
-% the Free Software Foundation; either version 2 of the License, or (at
-% your option) any later version.
-% 
-% This program is distributed in the hope that it will be useful, but
-% WITHOUT ANY WARRANTY; without even the implied warranty of
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-% General Public License for more details.
-% 
-% You should have received a copy of the GNU General Public License
-% along with this program; if not, write to the Free Software
-% Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
-% USA.
-
-%   Last modified by Takashi Nishikawa on 1/22/2015
+% Source: Canizares, C., et al. "Benchmark systems for small signal stability analysis and control." 
+% http://resourcecenter. ieee-pes. org/pes/product/technical-reports/PESTR18 PES-TR (2015).
 
 %% system reference frequency (Hz)
 mpc.ref_freq = 60;
