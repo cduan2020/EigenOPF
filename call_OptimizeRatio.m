@@ -7,7 +7,7 @@ system='test_system_10gen';
 % system='test_system_16gen';
 % system='test_system_50gen';
 
-% specify the number of ratios of controllable load
+% specify the number of load controllability levels
 N=11;
 maxReal=zeros(1,N+1);
 improve=zeros(1,N+1);
