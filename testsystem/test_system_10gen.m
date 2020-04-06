@@ -97,6 +97,7 @@ function mpc = test_system_10gen
 
 % Dynamic Data Source: Canizares, C., et al. "Benchmark systems for small signal stability analysis and control." 
 % http://resourcecenter. ieee-pes. org/pes/product/technical-reports/PESTR18 PES-TR (2015).
+% Modified by Chao Duan 4/6/2020
 mpc.ref_freq = 60;
 [Ka_red,Ks_red] = ExcitorRed(200*ones(10,1),0.01*ones(10,1),0.015*ones(10,1),10*ones(10,1),1*ones(10,1),[1;0.5;0.5;2.0;1.0;4.0;7.5;2.0;2.0;1.0],[1;5;3;1;1.5;0.5;0.2;1;1;5],[0.05;0.4;0.2;0.1;0.2;0.1;0.02;0.2;0.5;0.6],[3;1;2;1;1;0.5;0.5;1;2;3],[0.5;0.1;0.2;0.3;0.1;0.05;0.1;0.1;0.1;0.5]);
 mpc.gen_dyn(:,1) = [0.031;0.0697;0.0531;0.0436;0.132;0.05;0.049;0.057;0.057;0.006]; %[0.31;0.57;0.57;0.49;0.5;1.32;0.436;0.531;0.697;0.06]; % xdp
