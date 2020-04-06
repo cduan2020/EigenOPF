@@ -24,7 +24,7 @@ The main function TX_opt maximizes the system damping ratio by simultaneously ad
 
 The function takes the inputs of transmission system data structure (ps), initial power flow solution (Vps0), percentage of controllable load (dispratio), and load level (load_level). It returns the indicator of success (success), optimized damping ratio, percentages of improvement (improve), and the power flow solution after optimization (Vps1).
 
-Examples are given in call_OptimizeRatio.m.
+See call_OptimizeRatio.m (and OptimizeRatio.m) for an example of using the function TX_opt.
 
 
 
