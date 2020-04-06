@@ -7,7 +7,6 @@ Tw=10*ones(size(Ka,1),1);
 
 Ka_red = abs((1./(1+s*Tr)).*(Ka./(1+s*Ta)).*((1+s*Tc)./(1+s*Tb)));
 
-% Ks_red = abs(Ks.*1./(1+s*Tr).*((s*Tw)./(1+s*Tw)).*((1+s*T1)./(1+s*T2)).*((1+s*T3)./(1+s*T4)));
 
 Ks_red = abs(Ks.*1./(1+s*Tr).*((s*Tw)./(1+s*Tw)).*((1+s*T1)./(1+s*T2)).*((1+s*T3)./(1+s*T4)).*(Ka./(1+s*Ta)).*((1+s*Tc)./(1+s*Tb)));
 
