@@ -1,7 +1,7 @@
 # EigenOPF
 Copyright (C) 2020 Chao Duan
 
-Generation and Demand Co-optimization for Small-signal Stability Enhancement.
+Generation and Demand Co-optimization for Small-Signal Stability Enhancement.
 
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
