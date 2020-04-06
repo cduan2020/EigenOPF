@@ -1,5 +1,5 @@
 function [ps, success] = runpf_ps( ps, mpopt )
-% Originnal modified by Ferenc Molnar.
+% Originally created by Ferenc Molnar.
 
 %runpf_ps Runs AC power flow exactly as MATPOWER, except using ps format.
 % Matpower options used: 
