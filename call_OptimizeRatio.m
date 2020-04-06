@@ -7,7 +7,7 @@ system='test_system_10gen';
 % system='test_system_16gen';
 % system='test_system_50gen';
 
-% specify the number of raios of controllable load
+% specify the number of ratios of controllable load
 N=11;
 maxReal=zeros(1,N+1);
 improve=zeros(1,N+1);
@@ -33,7 +33,7 @@ ps.gen(:,2)=ps.gen(:,2)*loadability;
 Vps0=results.bus(:,8).*exp(1j*results.bus(:,9)/180*pi);
 %=========================================================
 
-% Calculate the initial linearized system and damping ratio and plot the system eigenvalues
+% calculate the initial linearized system and damping ratio and plot the system eigenvalues
 [Asys0, Bsys0, Csys0, Dsys0]=DAEsys(ps,Vps0);
 Afull=Asys0-Bsys0*(Dsys0\Csys0);
 [Ueig0,D,Veig0] = eig(full(Afull));
@@ -53,7 +53,7 @@ ylim([-25 25]);
 xlabel 'Real part'
 ylabel 'Imaginary part'
 
-% we gradually increase the ratio of controllable load and obtain optimized power flow solution
+% gradually increase the ratio of controllable load and obtain optimized power flow solution
 dispratio=0.0;
 load_level=1;
 maxReal(1,1)=max(real(lambda(abs(lambda)>10^-6 & imag(lambda)>0.01))./(abs(imag(lambda(abs(lambda)>10^-6 & imag(lambda)>0.01)))));
@@ -65,7 +65,7 @@ for i=1:11
     maxReal
 end
 
-% Calculate the optimized linearized system and plot the system eigenvalues
+% calculate the optimized linearized system and plot the system eigenvalues
 figure(1);
 [Asys0, Bsys0, Csys0, Dsys0]=DAEsys(ps,Vps0);
 Afull=Asys0-Bsys0*(Dsys0\Csys0);
