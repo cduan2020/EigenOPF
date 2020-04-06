@@ -109,11 +109,8 @@ if mpopt.opf.init_from_mpc ~= 1
     x0(vv.i1.Va:vv.iN.Va) = Varefs(1);  %% angles set to first reference angle
     if ny > 0
         ipwl = find(gencost(:, MODEL) == PW_LINEAR);
-    %     PQ = [gen(:, PMAX); gen(:, QMAX)];
-    %     c = totcost(gencost(ipwl, :), PQ(ipwl));
         c = gencost(sub2ind(size(gencost), ipwl, NCOST+2*gencost(ipwl, NCOST)));    %% largest y-value in CCV data
         x0(vv.i1.y:vv.iN.y) = max(c) + 0.1 * abs(max(c));
-    %     x0(vv.i1.y:vv.iN.y) = c + 0.1 * abs(c);
     end
 end
 
