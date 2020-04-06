@@ -1,4 +1,6 @@
 function [ps, busdata] = mpc2ps( mpc, busdata )
+% Originnal created by Ferenc Molnar.
+
 %mpc2ps Converts from MatPower's mpc format to our PowerSystem format.
 % This is version 2, modified for structure preserving model.
 % Additional busdata will be relabeled along the conversion from external
