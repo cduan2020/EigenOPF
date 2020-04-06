@@ -43,19 +43,7 @@ if any(mpc.gen(:,1) ~= data(:,1))
     error('Generator bus numbers do not match up.')
 end
 
-% mpc.gen_dyn(:,1) = data(:,3); % xdp
-% mpc.gen_dyn(:,2) = data(:,3)*3; % xd
-% mpc.gen_dyn(:,3)=mpc.gen_dyn(:,1);    % xqp
-% mpc.gen_dyn(:,4) =mpc.gen_dyn(:,2);    %xp
-% mpc.gen_dyn(:,5) = data(:,2); % H
-% mpc.gen_dyn(:,6) = ones(size(mpc.gen,1),1)*0; %D
-% mpc.gen_dyn(:,7) = (5*ones(size(mpc.gen,1),1));  % Td0p
-% mpc.gen_dyn(:,8) = (0.3*ones(size(mpc.gen,1),1));  % Tq0p
-% mpc.gen_dyn(:,9) = ones(size(mpc.gen,1),1)*200; % Ka
-% mpc.gen_dyn(:,10)= ones(size(mpc.gen,1),1).*20;   % Ks
-% mpc.gen_dyn(:,11)= ones(size(mpc.gen,1),1)*100; % Sb
-
-
+% Due to the lack of detailed data, the following typical parameters for PSSs and excitors are chosen.
 Ka=200*ones(50,1);
 Tr=0.0001*ones(50,1);
 Ta=0.01*ones(50,1);
