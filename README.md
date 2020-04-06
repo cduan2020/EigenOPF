@@ -29,7 +29,7 @@ The function takes as inputs a data structure specifying the transmission system
 
 See call_OptimizeRatio.m (and OptimizeRatio.m) for an example of using TX_opt.
 
-The detailed power system model and the techniques to derive the linearized system and the associated derivative information are available in [appendices.](https://github.com/cduan2020/EigenOPF/blob/master/appendices.pdf)
+Auxiliary document [appendices.pdf](https://github.com/cduan2020/EigenOPF/blob/master/appendices.pdf) contains the detailed power system model and the derivation of the linearized system (Appendix A) and the calculation of the associated derivative (Appendix B). 
 
 
 
