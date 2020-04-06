@@ -1,5 +1,6 @@
 function mpc = test_system_16gen
 
+% All static and dynamic parameters are from the following source.
 % Source: Canizares, C., et al. "Benchmark systems for small signal stability analysis and control." 
 % http://resourcecenter. ieee-pes. org/pes/product/technical-reports/PESTR18 PES-TR (2015).
 
