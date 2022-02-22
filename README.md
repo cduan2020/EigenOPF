@@ -18,7 +18,7 @@ MATLAB 2017b or later.
 
 Matpower 5.1 https://matpower.org/download/
 
-IPOPT Solver or Knitro Solver, a free version of IPOPT can be found in https://www.inverseproblem.co.nz/OPTI/index.php/DL/DownloadOPTI
+IPOPT Solver or Knitro Solver, a free version of IPOPT can be found in https://github.com/jonathancurrie/OPTI.
 
 # Usage
 The main function TX_opt maximizes the system damping ratio by simultaneously adjusting generation and demand.
